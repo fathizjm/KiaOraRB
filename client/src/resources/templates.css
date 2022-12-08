@@ -5,6 +5,7 @@
    padding: 20px;
    position: relative;
    width: 350px;
+
 }
 
 .home .template .text{
@@ -37,7 +38,7 @@
 
 /* template1 styling */
 .template1-parent{
-    color: rgba(0, 0, 0, 0.699) !important;
+    color: rgba(0, 0, 0, 0.6) !important;
     padding: 100px;
 }
 .template1-parent h1{
