@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { useNavigate, useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import DefaultLayout from "../../components/DefaultLayout";
 import Documentsupload from "../../components/Documentsupload";
 import LinkedinUpload from "../../components/LinkedinUpload";
@@ -8,9 +8,9 @@ import Github from "../../components/Github";
 import Template1 from "./Template1";
 import Template2 from "./Template2";
 import { Button , Tabs} from "antd";
+import SocialUpload from "../../components/SocialUpload";
 
-
-export default function Templates() {
+function Templates() {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
@@ -47,8 +47,10 @@ export default function Templates() {
     <Tabs.TabPane tab="Github" key="4">
     <Github />
     </Tabs.TabPane>
-
-
+   
+    <Tabs.TabPane tab="Social" key="5">
+    <SocialUpload />
+    </Tabs.TabPane>
     
     
   </Tabs>
@@ -57,4 +59,4 @@ export default function Templates() {
   );
   }
 
-
+export default Templates;
