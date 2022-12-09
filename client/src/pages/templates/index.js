@@ -9,6 +9,7 @@ import Template1 from "./Template1";
 import Template2 from "./Template2";
 import { Button , Tabs} from "antd";
 import SocialUpload from "../../components/SocialUpload";
+import VideoUpload from "../../components/VideoUpload";
 
 function Templates() {
   const componentRef = useRef();
@@ -50,6 +51,10 @@ function Templates() {
    
     <Tabs.TabPane tab="Social" key="5">
     <SocialUpload />
+    </Tabs.TabPane>
+
+    <Tabs.TabPane tab="Video" key="6">
+    <VideoUpload />
     </Tabs.TabPane>
     
     
